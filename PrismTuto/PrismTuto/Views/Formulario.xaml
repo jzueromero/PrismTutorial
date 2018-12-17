@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="PrismTuto.Views.Formulario"
+             Title="Formulario de parametros">
+    <StackLayout>
+        <Label Text="{Binding Titulo}"></Label>
+        <Switch IsToggled="{Binding CanNavigateProp}"></Switch>
+        <Button Text="Navigate to.." Command="{Binding NavigateCommad}"></Button>
+    </StackLayout>
+  
+</ContentPage>
