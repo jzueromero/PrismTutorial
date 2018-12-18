@@ -24,7 +24,7 @@ namespace PrismTuto
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/Formulario");
+            await NavigationService.NavigateAsync(new System.Uri("/CustomMasterDetailPage/NavigationPage/Formulario", System.UriKind.Absolute));
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -37,7 +37,10 @@ namespace PrismTuto
             
             containerRegistry.RegisterForNavigation<Formulario, FormularioViewModel>();
             containerRegistry.RegisterForNavigation<RecibeFormulario, RecibeFormularioViewModel>();
+            containerRegistry.RegisterForNavigation<CustomMasterDetailPage, CustomMasterDetailPageViewModel>();
+            
             containerRegistry.Register<ITodoItemService, ToDoItemService>();
+            
         }
     }
 }
