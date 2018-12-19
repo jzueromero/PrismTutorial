@@ -43,3 +43,8 @@ C:\Users\josue.romero\source\repos\PrismTuto2\PrismTuto\PrismTuto\obj\Debug\nets
 C:\Users\josue.romero\source\repos\PrismTuto2\PrismTuto\PrismTuto\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\josue.romero\source\repos\PrismTuto2\PrismTuto\PrismTuto\obj\Debug\netstandard2.0\PrismTuto.dll
 C:\Users\josue.romero\source\repos\PrismTuto2\PrismTuto\PrismTuto\obj\Debug\netstandard2.0\PrismTuto.pdb
+C:\Users\josue.romero\source\repos\PrismTuto2\PrismTuto\PrismTuto\obj\Debug\netstandard2.0\Views\CustomTabbedPage.xaml.g.cs
+C:\Users\josue.romero\source\repos\PrismTuto2\PrismTuto\PrismTuto\obj\Debug\netstandard2.0\Views\Tabbeb1Test.xaml.g.cs
+C:\Users\josue.romero\source\repos\PrismTuto2\PrismTuto\PrismTuto\obj\Debug\netstandard2.0\Views\Tabbeb2Test.xaml.g.cs
+C:\Users\josue.romero\source\repos\PrismTuto2\PrismTuto\PrismTuto\obj\Debug\netstandard2.0\Views\Tabbeb3Test.xaml.g.cs
+C:\Users\josue.romero\source\repos\PrismTuto2\PrismTuto\PrismTuto\obj\Debug\netstandard2.0\Views\CustomTabbedPageWBack.xaml.g.cs

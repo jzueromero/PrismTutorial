@@ -19,6 +19,14 @@ namespace PrismTuto.ViewModels
 
         private async void NavigateAsync(string page)
         {
+            if(page == "Navigation/CustomTabbedPage" )
+            {
+                await _navigationService.NavigateAsync (new System.Uri("/NavigationPage/CustomTabbedPage?selectedTab=Tabbeb1Page", System.UriKind.Absolute));
+            }
+            if (page == "Navigation/CustomTabbedPageWBack")
+            {
+                await _navigationService.NavigateAsync(new System.Uri("/NavigationPage/CustomTabbedPageWBack?selectedTab=Tabbeb1Page", System.UriKind.Absolute));
+            }
             await _navigationService.NavigateAsync(new Uri(page, UriKind.Relative));
         }
     }

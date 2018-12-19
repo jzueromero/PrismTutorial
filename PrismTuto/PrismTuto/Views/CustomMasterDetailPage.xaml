@@ -17,6 +17,16 @@
                         BackgroundColor="Black"
                         Command="{Binding OnNavigationCommand}"
                         CommandParameter="NavigationPage/MainPage"></Button>
+                <Button Text="Go to TabbebPage"
+                        TextColor="White"
+                        BackgroundColor="Blue"
+                        Command="{Binding OnNavigationCommand}"
+                        CommandParameter="Navigation/CustomTabbedPage"></Button>
+                <Button Text="Go TabbedPage With Back Button"
+                        TextColor="White"
+                        BackgroundColor="Green"
+                        Command="{Binding OnNavigationCommand}"
+                        CommandParameter="Navigation/CustomTabbedPage"></Button>
             </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>

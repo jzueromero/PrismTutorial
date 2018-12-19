@@ -40,7 +40,6 @@ namespace PrismTuto.ViewModels
             :base(navigationService)
         {
             this.TodoItemService = todoItemService;
-
             this.AddCommand = new DelegateCommand(this.AddTodoItem, () => !string.IsNullOrEmpty(this.InputText))
                 .ObservesProperty(() => this.InputText);
 
@@ -50,14 +49,23 @@ namespace PrismTuto.ViewModels
 
         private async void DeleteTodoItem(TodoItem todoItem)
         {
-            await this.TodoItemService.DeleteAsync(todoItem);
+            if(!String.IsNullOrEmpty(this.inputText))
+            {
+                todoItem.Title = this.inputText;
+                await this.TodoItemService.UpdateAsync(todoItem);
+            }
+            else
+            {
+                await this.TodoItemService.DeleteAsync(todoItem);
+            }
+            
             this.TodoItems = await this.TodoItemService.GetAllAsync();
         }
 
         private async void UpdateTodoItem(TodoItem todoItem)
         {
-            
-            
+
+            todoItem.Title = this.inputText;
             await this.TodoItemService.UpdateAsync(todoItem);
             this.TodoItems = await this.TodoItemService.GetAllAsync();
         }

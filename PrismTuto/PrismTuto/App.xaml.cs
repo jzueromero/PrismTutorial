@@ -40,7 +40,12 @@ namespace PrismTuto
             containerRegistry.RegisterForNavigation<CustomMasterDetailPage, CustomMasterDetailPageViewModel>();
             
             containerRegistry.Register<ITodoItemService, ToDoItemService>();
-            
+
+            containerRegistry.RegisterForNavigation<CustomTabbedPage, CustomTabbedPageViewModel>();
+            containerRegistry.RegisterForNavigation<Tabbeb1Test, Tabbeb1TestViewModel>();
+            containerRegistry.RegisterForNavigation<Tabbeb2Test, Tabbeb2TestViewModel>();
+            containerRegistry.RegisterForNavigation<Tabbeb3Test, Tabbeb3TestViewModel>();
+            containerRegistry.RegisterForNavigation<CustomTabbedPageWBack, CustomTabbedPageWBackViewModel>();
         }
     }
 }
